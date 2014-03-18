@@ -38,7 +38,7 @@ execute "setup mysql datadir" do
 end
 
 # setup the main server config file
-template "/etc/my.cnf" do
+template "#{node.percona.conf_dir}/my.cnf" do
   source "my.cnf.#{conf ? "custom" : server["role"]}.erb"
   owner "root"
   group "root"

@@ -26,6 +26,7 @@ default["percona"]["keyserver"]                                 = "keys.gnupg.ne
 default["percona"]["encrypted_data_bag"]                        = "passwords"
 
 # Basic Settings
+default["percona"]["conf_dir"]                                  = "/etc/mysql"
 default["percona"]["server"]["role"]                            = "standalone"
 default["percona"]["server"]["username"]                        = "mysql"
 default["percona"]["server"]["datadir"]                         = "/var/lib/mysql"
